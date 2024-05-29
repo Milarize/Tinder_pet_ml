@@ -11,7 +11,7 @@ model_name = "openai/clip-vit-base-patch16"
 clip = CLIPModel.from_pretrained(model_name)
 processor = CLIPProcessor.from_pretrained(model_name)
 
-# เพิ่ม label ใหม่สำหรับภาพศิลปะของหมาและแมว
+
 labels = ['a photo of a cat', 'a photo of a dog', 'not a cat or dog', 'an art of a cat', 'an art of a dog']
 
 @app.post("/classify/")
